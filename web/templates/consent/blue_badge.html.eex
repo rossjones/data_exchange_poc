@@ -1,0 +1,66 @@
+<div class="grid-row">
+  <div class="column-two-thirds">
+
+    <h1 class="heading-large">
+      Request for permissions
+    </h1>
+
+    <%= if @error do %>
+
+    <div
+        class="error-summary"
+        role="group"
+        aria-labelledby="error-summary-heading-example-1"
+        tabindex="-1">
+      <h1
+          class="heading-medium error-summary-heading"
+          id="error-summary-heading-example-1">
+        No identity provided
+      </h1>
+
+      <ul class="error-summary-list">
+          <li>
+            The calling service failed to provide proof of identity.
+            <span class="visuallyhidden">.</span>
+          </li>
+      </ul>
+    </div>
+
+    <%= else %>
+
+      <p>
+        To prove online that you are eligible for 'Service',
+        'Service Provider' needs your permission to:
+      </p>
+
+      <p style="font-weight: bold;">
+        <span style="text-decoration: underline">Check</span>
+        your disability status with Department of Work and Pensions
+
+      </p>
+
+      <p style="font-weight: bold;">
+        <span style="text-decoration: underline">Receive</span>
+        your personal details through your signin
+      </p>
+
+      <p style="font-weight: bold;">
+        <span style="text-decoration: underline">Store</span>
+        your personal details (including your name, address and
+        contact information)
+      </p>
+
+      <form action="/consent/redirecting" class="form">
+        <div class="form-group">
+          <input type="submit" class="button" value="I give permission">
+        </div>
+      </form>
+
+      <p class="font-xsmall">
+        Alternatively, if you don't give permission, you can complete
+        an <a href="/consent/redirecting">offline application</a>.
+      </p>
+
+      <% end %>
+  </div>
+</div>

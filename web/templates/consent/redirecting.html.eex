@@ -1,0 +1,24 @@
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+      You are being redirected to 'Service Provider'
+      </h1>
+
+      <p class="lede">
+      Redirecting to
+      https://serviceprovider/application/?consent=81615219-21cf-4b9f-91e2-b1dd2f112b26
+      </p>
+
+      <p>
+      The service provider can use the consent token (within a time limit) to make an API*
+      call and prove that it has the user's consent.
+      </p>
+
+      <p>
+      *
+      <a href="/api/blue_badge?consent_token=81615219-21cf-4b9f-91e2-b1dd2f112b26&bearer=1234&data={}">https://exchange/api/blue_badge?consent_token=81615219-21cf-4b9f-91e2-b1dd2f112b26&bearer=1234&matched_data={...}</a>
+      </p>
+
+  </div>
+</div>

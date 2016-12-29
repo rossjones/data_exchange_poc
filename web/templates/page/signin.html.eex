@@ -1,0 +1,28 @@
+<form method="post"  class="form">
+
+    <input type="hidden" name="_csrf_token" value="<%= get_csrf_token() %>">
+
+    <h1 class="heading-large">
+        Sign in
+    </h1>
+
+    <fieldset>
+        <legend class="visuallyhidden">
+            Please provide your credentials
+        </legend>
+
+        <div class="form-group">
+            <label class="form-label bold" for="email">Email address</label>
+            <input class="form-control form-control-2-3" id="email" name="email" type="email">
+        </div>
+
+        <div class="form-group">
+            <label class="form-label bold" for="password">Password</label>
+            <input class="form-control form-control-2-3" id="password" name="password" type="password">
+        </div>
+    </fieldset>
+
+    <div class="form-group">
+        <a class="button" href="/consent">Continue</a>
+    </div>
+</form>

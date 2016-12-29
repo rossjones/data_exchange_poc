@@ -1,0 +1,25 @@
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        Manage how government departments are able to use your data
+      </h1>
+
+      <p class="lede">
+        You must create an account to use this service.
+      </p>
+
+      <p class="lede">
+        If you already have an account, sign in to control how your data is used.
+      </p>
+
+
+      <a
+      class="button button-start"
+      href="/login"
+      role="button">
+      Sign in with Verify
+    </a>
+
+  </div>
+</div>
