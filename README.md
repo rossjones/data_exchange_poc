@@ -28,7 +28,7 @@ get the results. The GET call should be made to ```/api/blue_badge``` and contai
 
 | Parameter | Description   |
 |---|---|
-| token | The token identifying the clinet |
+| token | The token identifying the client |
 | consent_token | The consent token obtained when the user gave consent |
 | matched_data |  A JSON object containing the matched data for the user identifiedby the bearer token |
 
