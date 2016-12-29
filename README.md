@@ -63,6 +63,12 @@ A failed result that was not matched will be a JSON object that looks like:
 }
 ```
 
+### Fake data for testing/demo
+
+**Valid client tokens**:  1234, 4321  
+**Valid bearer tokens**: Any even number.  
+
+
 ### TODO
 
 * Create PoC happy path
