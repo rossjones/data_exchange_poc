@@ -14,9 +14,6 @@ config :exchange, Exchange.Endpoint,
 # Configure your database
 config :exchange, Exchange.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: System.get_env("DATABASE_USERNAME"),
-  password: System.get_env("DATABASE_PASSWORD"),
-  database: System.get_env("DATABASE_NAME"),
-  host: System.get_env("DATABASE_HOST"),
+  url: {:system, "DATABASE_URL" },
   size: 20
 
