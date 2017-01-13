@@ -50,15 +50,11 @@
         contact information)
       </p>
 
-      <form action="/consent/redirecting" class="form">
-        <div class="form-group">
-          <input type="submit" class="button" value="I give permission">
-        </div>
-      </form>
+      <a class="button" href="<%= @referer %>/consent-given?token=<%= @token %>">I give permission</a>
 
       <p class="font-xsmall">
         Alternatively, if you don't give permission, you can complete
-        an <a href="/consent/redirecting">offline application</a>.
+        an <a href="<%= @referer %>/no-consent">offline application</a>.
       </p>
 
       <% end %>
