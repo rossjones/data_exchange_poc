@@ -17,6 +17,6 @@ config :exchange, Exchange.Repo,
   username: System.get_env("DATABASE_USERNAME"),
   password: System.get_env("DATABASE_PASSWORD"),
   database: System.get_env("DATABASE_NAME"),
-  host: System.get_env("DATABASE_HOST")
+  host: System.get_env("DATABASE_HOST"),
   size: 20
 
