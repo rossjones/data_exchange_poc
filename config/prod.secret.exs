@@ -16,6 +16,7 @@ config :exchange, Exchange.Repo,
   adapter: Ecto.Adapters.Postgres,
   username: System.get_env("DATABASE_USERNAME"),
   password: System.get_env("DATABASE_PASSWORD"),
-  database: "hello_phoenix_heroku_prod",
-  size: 20 # The amount of database connections in the pool
+  database: System.get_env("DATABASE_NAME"),
+  host: System.get_env("DATABASE_HOST")
+  size: 20
 
